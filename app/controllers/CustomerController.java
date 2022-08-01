@@ -94,7 +94,7 @@ public class CustomerController {
         }, httpExecutionContext.current());
     }
 
-    public Result search(int id){
+    public Result demoFunc(int id){
 
         /** Group by*/
         /** Total BankAccount of a customer*/
@@ -123,16 +123,16 @@ public class CustomerController {
 
         /** Use Entity Mapping - Get BankAccount, Customer form customer_id*/
 
-//        /** Get Customer item where id = ?  */
-//        Customer customers = DB.find(Customer.class)
-//                .setId(id)
-//                .findOne();
-//        /** Get list Bank Account from attribute CustomerAccounts (List<CustomerAccount>)
-//         * of Customer object */
-//        List<BankAccount> result = new ArrayList<>();
-//        for(CustomerAccount item : customers.getCustomerAccounts()){
-//            result.add(item.getBankAccount());
-//        }
+        /** Get Customer item where id = ?  */
+        Customer customers = DB.find(Customer.class)
+                .setId(id)
+                .findOne();
+        /** Get list Bank Account from attribute CustomerAccounts (List<CustomerAccount>)
+         * of Customer object */
+        List<BankAccount> result = new ArrayList<>();
+        for(CustomerAccount item : customers.getCustomerAccounts()){
+            result.add(item.getBankAccount());
+        }
 
 //        List<BankAccount> result = DB.find(BankAccount.class)
 //                .fetch("customerAccounts")
@@ -237,19 +237,19 @@ public class CustomerController {
 
         /**-------------------------------------------------------------------------*/
 
-        int page = 0;
-        int pageSize = 10;
-        String sortBy="id";
-        String order="ASC";
-        String filter="";
-
-        PagedList<CustomerDevice> pagedList = DB.find(CustomerDevice.class)
-                .orderBy(sortBy + " " + order)
-                .setFirstRow(page*pageSize)
-                .setMaxRows(pageSize)
-                .findPagedList();
-
-        List<CustomerDevice> result = pagedList.getList();
+//        int page = 0;
+//        int pageSize = 10;
+//        String sortBy="id";
+//        String order="ASC";
+//        String filter="";
+//
+//        PagedList<CustomerDevice> pagedList = DB.find(CustomerDevice.class)
+//                .orderBy(sortBy + " " + order)
+//                .setFirstRow(page*pageSize)
+//                .setMaxRows(pageSize)
+//                .findPagedList();
+//
+//        List<CustomerDevice> result = pagedList.getList();
 
         return ok(Json.toJson(result));
 

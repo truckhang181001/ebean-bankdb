@@ -406,3 +406,4 @@ Caused by: java.lang.IllegalStateException: Transaction is Inactive
 2022-08-01 08:58:38,855 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-23 - Application started (Dev) (no global state)
 2022-08-01 08:58:38,873 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10; --bind()
 2022-08-01 08:58:38,874 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[1940] rows[10] predicates[] bind[]
+2022-08-01 09:41:39,044 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-9 housekeeper - HikariPool-9 - Retrograde clock change detected (housekeeper delta=29s824ms), soft-evicting connections from pool.

@@ -1,16 +1,12 @@
-# play-java-ebean-example
+# Ebean ORM | Bank DB
 
-This is an example Play application that uses Java, and communicates with an in memory database using EBean.
+This is an example Play application 2.8.x that uses Java, and communicates with an MYSQL Database using EBean.
 
-The GitHub location for this project is inside:
+## Application
 
-<https://github.com/playframework/play-samples>
+You can view detail about project config, ebean query, function here:
 
-## Play
-
-Play documentation is here:
-
-[https://playframework.com/documentation/latest/Home](https://playframework.com/documentation/latest/Home)
+[EBEAN ORM SLIDE INTRODUCTION | CANVA](https://www.canva.com/design/DAFGcVHdD2M/Y8b4doTESjFM4fVPUZgBWg/view?utm_content=DAFGcVHdD2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## EBean
 

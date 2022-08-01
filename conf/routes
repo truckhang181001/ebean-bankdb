@@ -18,5 +18,5 @@ POST    /device/create                  controllers.CustomerDeviceController.cre
 GET     /bankaccount/:id                controllers.BankAccountController.view(id: Int)
 POST    /bankaccount/create/:id         controllers.BankAccountController.create(id: Int, request: Request)
 
-GET     /customer/search/:id                controllers.CustomerController.search(id: Int)
+GET     /customer/demo/:id                controllers.CustomerController.demoFunc(id: Int)
 
