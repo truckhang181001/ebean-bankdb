@@ -1,0 +1,45 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 2 products, 2 sources, 1 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/test/testEbean.java, ${BASE}/test/testCIDR.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set(NamesChange(services.CIDR.CidrSingleton,ModifiedNames(changes = UsedName(correctCidr,[Default]), UsedName(services;CIDR;CidrSingleton;init;,[Default]), UsedName(getInstance,[Default]), UsedName(validateCidr,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(CidrSingleton,[Default]), UsedName(wait,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(notify,[Default]))), NamesChange(models.Customer,ModifiedNames(changes = UsedName(deletePermanent,[Default]), UsedName(Customer,[Default]), UsedName(getToken,[Default]), UsedName(getBirth,[Default]), UsedName(getCustomerDevices,[Default]), UsedName(getCreatedAt,[Default]), UsedName(setCustomerName,[Default]), UsedName(setCreatedAt,[Default]), UsedName(isDeleted,[Default]), UsedName(setCustomerAccounts,[Default]), UsedName(setCustomerDevices,[Default]), UsedName(save,[Default]), UsedName(update,[Default]), UsedName(getCustomerName,[Default]), UsedName(refresh,[Default]), UsedName(equals,[Default]), UsedName(models;Customer;init;,[Default]), UsedName(toString,[Default]), UsedName(delete,[Default]), UsedName(insert,[Default]), UsedName(wait,[Default]), UsedName(markPropertyUnset,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(db,[Default]), UsedName(setId,[Default]), UsedName(markAsDirty,[Default]), UsedName(getId,[Default]), UsedName(getCustomerAccounts,[Default]), UsedName(setDeleted,[Default]), UsedName(getUpdatedAt,[Default]), UsedName(setBirth,[Default]), UsedName(setToken,[Default]), UsedName(notify,[Default]), UsedName(setUpdatedAt,[Default]), UsedName(flush,[Default])))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe services.CIDR.CidrSingleton has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(correctCidr,[Default]), UsedName(services;CIDR;CidrSingleton;init;,[Default]), UsedName(getInstance,[Default]), UsedName(validateCidr,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(CidrSingleton,[Default]), UsedName(wait,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(notify,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) services.CIDR.CidrSingleton: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNow invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) services.CIDR.CidrSingleton.[0m
+[0m[[0m[0mdebug[0m] [0m[0mName hashing optimization doesn't apply to non-Scala dependency: testCIDR[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe models.Customer has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(deletePermanent,[Default]), UsedName(Customer,[Default]), UsedName(getToken,[Default]), UsedName(getBirth,[Default]), UsedName(getCustomerDevices,[Default]), UsedName(getCreatedAt,[Default]), UsedName(setCustomerName,[Default]), UsedName(setCreatedAt,[Default]), UsedName(isDeleted,[Default]), UsedName(setCustomerAccounts,[Default]), UsedName(setCustomerDevices,[Default]), UsedName(save,[Default]), UsedName(update,[Default]), UsedName(getCustomerName,[Default]), UsedName(refresh,[Default]), UsedName(equals,[Default]), UsedName(models;Customer;init;,[Default]), UsedName(toString,[Default]), UsedName(delete,[Default]), UsedName(insert,[Default]), UsedName(wait,[Default]), UsedName(markPropertyUnset,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(db,[Default]), UsedName(setId,[Default]), UsedName(markAsDirty,[Default]), UsedName(getId,[Default]), UsedName(getCustomerAccounts,[Default]), UsedName(setDeleted,[Default]), UsedName(getUpdatedAt,[Default]), UsedName(setBirth,[Default]), UsedName(setToken,[Default]), UsedName(notify,[Default]), UsedName(setUpdatedAt,[Default]), UsedName(flush,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) models.Customer: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNow invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) models.Customer.[0m
+[0m[[0m[0mdebug[0m] [0m[0mName hashing optimization doesn't apply to non-Scala dependency: testEbean[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(services.CIDR.CidrSingleton,ModifiedNames(changes = UsedName(correctCidr,[Default]), UsedName(services;CIDR;CidrSingleton;init;,[Default]), UsedName(getInstance,[Default]), UsedName(validateCidr,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(CidrSingleton,[Default]), UsedName(wait,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(notify,[Default]))), NamesChange(models.Customer,ModifiedNames(changes = UsedName(deletePermanent,[Default]), UsedName(Customer,[Default]), UsedName(getToken,[Default]), UsedName(getBirth,[Default]), UsedName(getCustomerDevices,[Default]), UsedName(getCreatedAt,[Default]), UsedName(setCustomerName,[Default]), UsedName(setCreatedAt,[Default]), UsedName(isDeleted,[Default]), UsedName(setCustomerAccounts,[Default]), UsedName(setCustomerDevices,[Default]), UsedName(save,[Default]), UsedName(update,[Default]), UsedName(getCustomerName,[Default]), UsedName(refresh,[Default]), UsedName(equals,[Default]), UsedName(models;Customer;init;,[Default]), UsedName(toString,[Default]), UsedName(delete,[Default]), UsedName(insert,[Default]), UsedName(wait,[Default]), UsedName(markPropertyUnset,[Default]), UsedName(hashCode,[Default]), UsedName(notifyAll,[Default]), UsedName(getClass,[Default]), UsedName(db,[Default]), UsedName(setId,[Default]), UsedName(markAsDirty,[Default]), UsedName(getId,[Default]), UsedName(getCustomerAccounts,[Default]), UsedName(setDeleted,[Default]), UsedName(getUpdatedAt,[Default]), UsedName(setBirth,[Default]), UsedName(setToken,[Default]), UsedName(notify,[Default]), UsedName(setUpdatedAt,[Default]), UsedName(flush,[Default]))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set(testCIDR, testEbean)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(testCIDR, testEbean)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: testCIDR, testEbean[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@44abd828 directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.394993542 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.04410775 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.446682584 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

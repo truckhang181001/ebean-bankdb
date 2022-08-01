@@ -1,0 +1,89 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(a4d41695-88b7-4aa3-abab-be6d047cbb89), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources and 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source and 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 140 seconds, 39.608 (28.4%) were spent in GC. [Heap: 0.80GB free of 0.90GB, max 0.90GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources and 12 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/controllers/CustomerController.java:76:1:  error: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m            JsonNode json = request().body().asJson();[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^  symbol:   method request()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class CustomerController[0m
+[0m[[0m[31merror[0m] [0m[0m1 error[0m
+[0m[[0m[33mwarn[0m] [0m[0mjavac exited with exit code 1[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 620 seconds, 19.077 (3.1%) were spent in GC. [Heap: 0.84GB free of 0.95GB, max 0.95GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) javac returned non-zero exit code[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 1292 seconds, 26.565 (2.1%) were spent in GC. [Heap: 0.79GB free of 0.90GB, max 0.90GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 676 seconds, 21.819 (3.2%) were spent in GC. [Heap: 0.78GB free of 0.90GB, max 0.90GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/controllers/CustomerController.java:83:1:  error: incompatible types: Result cannot be converted to Supplier<? extends Result>[0m
+[0m[[0m[31merror[0m] [0m[0m                    .orElseGet(badRequest("FAIL"));[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+[0m[[0m[31merror[0m] [0m[0m1 error[0m
+[0m[[0m[33mwarn[0m] [0m[0mjavac exited with exit code 1[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) javac returned non-zero exit code[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

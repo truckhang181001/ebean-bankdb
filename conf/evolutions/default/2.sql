@@ -1,0 +1,6 @@
+-- # --- !Ups
+--
+--     insert into customer (customer_name, birth) values ('Nguyen Truc Khang','2001-10-18');
+--     insert into customer (customer_name, birth) values ('Nguyen Lam Anh','2001-10-18');
+--     insert into customer (customer_name, birth) values ('Le Van Hung','2001-10-18');
+--     insert into customer (customer_name, birth) values ('Vo Van Anh','2001-10-18')

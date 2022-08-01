@@ -1,0 +1,408 @@
+2022-08-01 08:48:31,889 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
+2022-08-01 08:48:31,896 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2022-08-01 08:48:31,997 [WARN] from io.avaje.config.InitialLoader in play-dev-mode-akka.actor.default-dispatcher-7 - Loading properties from ebean.properties is deprecated. Please migrate to use application.yaml or application.properties instead.
+2022-08-01 08:48:32,726 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:48:32,752 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2022-08-01 08:48:40,559 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-4 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 limit 10 offset 10; --bind()
+2022-08-01 08:48:40,565 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-4 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[29756] rows[10] predicates[] bind[]
+2022-08-01 08:48:40,615 [TRACE] from io.ebean.TXN in application-akka.actor.default-dispatcher-4 - txn[1002] Begin
+2022-08-01 08:48:40,621 [DEBUG] from io.ebean.SQL in ebean-default1 - txn[1002] select count(*) from customer_device t0 where t0.deleted = 0; --bind()
+2022-08-01 08:48:40,621 [DEBUG] from io.ebean.SUM in ebean-default1 - txn[1002] FindCount exeMicros[2583] rows[66] type[models.CustomerDevice] predicates[] bind[]
+2022-08-01 08:48:40,623 [TRACE] from io.ebean.TXN in ebean-default1 - txn[1002] Commit - query only
+2022-08-01 08:48:40,676 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-4 - 
+
+! @7ofb2fm6m - Internal server error, for (GET) [/customer/search/100] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:242)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:436)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:428)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at play.libs.Json.toJson(Json.java:94)
+	at controllers.CustomerController.search(CustomerController.java:251)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$28(Routes.scala:369)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:142)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:141)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:115)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:119)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:175)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at play.core.j.HttpExecutionContext.$anonfun$execute$1(HttpExecutionContext.scala:64)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:59)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:312)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:182)
+	at scala.concurrent.Future$.apply(Future.scala:678)
+	at play.core.j.JavaAction.apply(JavaAction.scala:176)
+	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:168)
+	at scala.util.Try$.apply(Try.scala:210)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:168)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:199)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:423)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3232)
+	at play.libs.Json.toJson(Json.java:92)
+	... 42 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:316)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:763)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3058)
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3227)
+	... 43 common frames omitted
+Caused by: java.lang.IllegalStateException: Transaction is Inactive
+	at io.ebeaninternal.server.transaction.JdbcTransaction.getInternalConnection(JdbcTransaction.java:875)
+	at io.ebeaninternal.server.transaction.JdbcTransaction.getConnection(JdbcTransaction.java:886)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	... 54 common frames omitted
+2022-08-01 08:49:06,426 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-5 - txn[1003] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 limit 10 offset 10; --bind()
+2022-08-01 08:49:06,442 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-5 - txn[1003] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[28116] rows[10] predicates[] bind[]
+2022-08-01 08:49:06,475 [TRACE] from io.ebean.TXN in application-akka.actor.default-dispatcher-5 - txn[1004] Begin
+2022-08-01 08:49:06,483 [DEBUG] from io.ebean.SQL in ebean-default1 - txn[1004] select count(*) from customer_device t0 where t0.deleted = 0; --bind()
+2022-08-01 08:49:06,483 [DEBUG] from io.ebean.SUM in ebean-default1 - txn[1004] FindCount exeMicros[5076] rows[66] type[models.CustomerDevice] predicates[] bind[]
+2022-08-01 08:49:06,487 [DEBUG] from io.ebean.TXN in ebean-default1 - txn[1004] Rollback
+2022-08-01 08:49:06,787 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-5 - 
+
+! @7ofb2h8n5 - Internal server error, for (GET) [/customer/search/100] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: java.lang.IllegalArgumentException: Connection is closed (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"]->com.zaxxer.hikari.pool.HikariProxyConnection["isReadOnly"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:242)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:436)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:428)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: Connection is closed (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"]->com.zaxxer.hikari.pool.HikariProxyConnection["isReadOnly"])
+	at play.libs.Json.toJson(Json.java:94)
+	at controllers.CustomerController.search(CustomerController.java:251)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$28(Routes.scala:369)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:142)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:141)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:115)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:119)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:175)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at play.core.j.HttpExecutionContext.$anonfun$execute$1(HttpExecutionContext.scala:64)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:59)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:312)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:182)
+	at scala.concurrent.Future$.apply(Future.scala:678)
+	at play.core.j.JavaAction.apply(JavaAction.scala:176)
+	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:168)
+	at scala.util.Try$.apply(Try.scala:210)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:168)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:199)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:423)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Connection is closed (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"]->com.zaxxer.hikari.pool.HikariProxyConnection["isReadOnly"])
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3232)
+	at play.libs.Json.toJson(Json.java:92)
+	... 42 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Connection is closed (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"]->com.zaxxer.hikari.pool.HikariProxyConnection["isReadOnly"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:316)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:763)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3058)
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3227)
+	... 43 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy21.isReadOnly(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.isReadOnly(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	... 57 common frames omitted
+2022-08-01 08:49:24,356 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-6 - Shutting down connection pool.
+2022-08-01 08:49:24,640 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] initialized
+2022-08-01 08:49:24,640 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2022-08-01 08:49:24,896 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:49:24,906 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
+2022-08-01 08:49:24,963 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1001] select * from customer where id = ?; --bind()
+2022-08-01 08:49:24,966 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1001] FindMany type[Customer] origin[DXWRQr.A.A] exeMicros[2449] rows[1] predicates[] bind[]
+2022-08-01 08:49:24,966 [DEBUG] from io.ebean.TXN in application-akka.actor.default-dispatcher-7 - txn[1001] Commit
+2022-08-01 08:49:24,994 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1002] select t0.customer_id, t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where (t0.customer_id) in (?) and t0.deleted = 0; --bind(Array[1]={15})
+2022-08-01 08:49:24,995 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1002] FindMany mode[+lazy] type[CustomerDevice] origin[DXWRQr.A.A] load[path:customerDevices size:1] exeMicros[2603] rows[3] predicates[(t0.customer_id) in (?)] bind[Array[1]={15}]
+2022-08-01 08:49:25,008 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1003] select t0.customer_id, t0.id, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id, t0.bank_account_id from customer_account t0 where (t0.customer_id) in (?) and t0.deleted = 0; --bind(Array[1]={15})
+2022-08-01 08:49:25,009 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1003] FindMany mode[+lazy] type[CustomerAccount] origin[DXWRQr.A.A] load[path:customerAccounts size:1] exeMicros[3174] rows[3] predicates[(t0.customer_id) in (?)] bind[Array[1]={15}]
+2022-08-01 08:49:25,017 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1004] select t0.id, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id, t0.bank_account_id from customer_account t0 where t0.id = ?   and t0.deleted = 0; --bind(10, )
+2022-08-01 08:49:25,017 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1004] FindBean type[CustomerAccount] origin[CVL_wn.A.A] lazyLoadProp[count] exeMicros[908] rows[1] bind[10, ]
+2022-08-01 08:49:25,018 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1005] select t0.id, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id, t0.bank_account_id from customer_account t0 where t0.id = ?   and t0.deleted = 0; --bind(19, )
+2022-08-01 08:49:25,019 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1005] FindBean type[CustomerAccount] origin[CVL_wn.A.A] lazyLoadProp[count] exeMicros[491] rows[1] bind[19, ]
+2022-08-01 08:49:25,020 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1006] select t0.id, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id, t0.bank_account_id from customer_account t0 where t0.id = ?   and t0.deleted = 0; --bind(20, )
+2022-08-01 08:49:25,020 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1006] FindBean type[CustomerAccount] origin[CVL_wn.A.A] lazyLoadProp[count] exeMicros[537] rows[1] bind[20, ]
+2022-08-01 08:49:41,145 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2022-08-01 08:49:41,271 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] initialized
+2022-08-01 08:49:41,271 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2022-08-01 08:49:41,365 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:49:41,372 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
+2022-08-01 08:49:41,393 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-5 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 limit 10 offset 10; --bind()
+2022-08-01 08:49:41,394 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-5 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[2104] rows[10] predicates[] bind[]
+2022-08-01 08:49:41,409 [TRACE] from io.ebean.TXN in application-akka.actor.default-dispatcher-5 - txn[1002] Begin
+2022-08-01 08:49:41,411 [DEBUG] from io.ebean.SQL in ebean-default1 - txn[1002] select count(*) from customer_device t0 where t0.deleted = 0; --bind()
+2022-08-01 08:49:41,411 [DEBUG] from io.ebean.SUM in ebean-default1 - txn[1002] FindCount exeMicros[872] rows[66] type[models.CustomerDevice] predicates[] bind[]
+2022-08-01 08:49:41,411 [TRACE] from io.ebean.TXN in ebean-default1 - txn[1002] Commit - query only
+2022-08-01 08:49:41,423 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-5 - 
+
+! @7ofb2j839 - Internal server error, for (GET) [/customer/search/100] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:242)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:436)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:428)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at play.libs.Json.toJson(Json.java:94)
+	at controllers.CustomerController.search(CustomerController.java:251)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$28(Routes.scala:369)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:142)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:141)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:115)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:119)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:175)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at play.core.j.HttpExecutionContext.$anonfun$execute$1(HttpExecutionContext.scala:64)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:59)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:312)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:182)
+	at scala.concurrent.Future$.apply(Future.scala:678)
+	at play.core.j.JavaAction.apply(JavaAction.scala:176)
+	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:168)
+	at scala.util.Try$.apply(Try.scala:210)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:168)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:199)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:423)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3232)
+	at play.libs.Json.toJson(Json.java:92)
+	... 42 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Transaction is Inactive (through reference chain: io.ebeaninternal.server.query.LimitOffsetPagedList["futureCount"]->io.ebeaninternal.server.query.QueryFutureRowCount["transaction"]->io.ebeaninternal.server.transaction.JdbcTransaction["connection"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:316)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:763)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3058)
+	at com.fasterxml.jackson.databind.ObjectMapper.valueToTree(ObjectMapper.java:3227)
+	... 43 common frames omitted
+Caused by: java.lang.IllegalStateException: Transaction is Inactive
+	at io.ebeaninternal.server.transaction.JdbcTransaction.getInternalConnection(JdbcTransaction.java:875)
+	at io.ebeaninternal.server.transaction.JdbcTransaction.getConnection(JdbcTransaction.java:886)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755)
+	... 54 common frames omitted
+2022-08-01 08:51:01,072 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-6 - Shutting down connection pool.
+2022-08-01 08:51:01,228 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-9 - Database [default] initialized
+2022-08-01 08:51:01,228 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
+2022-08-01 08:51:01,378 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-9 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:51:01,389 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev) (no global state)
+2022-08-01 08:51:01,422 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-5 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 limit 10 offset 10; --bind()
+2022-08-01 08:51:01,424 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-5 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[4306] rows[10] predicates[] bind[]
+2022-08-01 08:52:17,130 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-6 - Shutting down connection pool.
+2022-08-01 08:52:17,337 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] initialized
+2022-08-01 08:52:17,338 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2022-08-01 08:52:17,471 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:52:17,483 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
+2022-08-01 08:52:17,508 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 limit 10; --bind()
+2022-08-01 08:52:17,510 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[3168] rows[10] predicates[] bind[]
+2022-08-01 08:57:00,162 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-7 - Shutting down connection pool.
+2022-08-01 08:57:00,293 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-23 - Database [default] initialized
+2022-08-01 08:57:00,293 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-23 - Creating Pool for datasource 'default'
+2022-08-01 08:57:00,386 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-23 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:57:00,395 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-23 - Application started (Dev) (no global state)
+2022-08-01 08:57:00,425 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-4 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id desc limit 10; --bind()
+2022-08-01 08:57:00,426 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-4 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[3171] rows[10] predicates[] bind[]
+2022-08-01 08:57:47,247 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2022-08-01 08:57:47,382 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-23 - Database [default] initialized
+2022-08-01 08:57:47,382 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-23 - Creating Pool for datasource 'default'
+2022-08-01 08:57:47,494 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-23 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:57:47,503 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-23 - Application started (Dev) (no global state)
+2022-08-01 08:57:47,558 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10; --bind()
+2022-08-01 08:57:47,560 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[4110] rows[10] predicates[] bind[]
+2022-08-01 08:58:20,013 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1002] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10; --bind()
+2022-08-01 08:58:20,019 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1002] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[14160] rows[10] predicates[] bind[]
+2022-08-01 08:58:23,819 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-4 - Shutting down connection pool.
+2022-08-01 08:58:23,928 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-23 - Database [default] initialized
+2022-08-01 08:58:23,929 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-23 - Creating Pool for datasource 'default'
+2022-08-01 08:58:24,006 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-23 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:58:24,012 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-23 - Application started (Dev) (no global state)
+2022-08-01 08:58:24,053 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10 offset 20; --bind()
+2022-08-01 08:58:24,055 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[3212] rows[10] predicates[] bind[]
+2022-08-01 08:58:35,686 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1002] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10 offset 20; --bind()
+2022-08-01 08:58:35,696 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1002] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[20120] rows[10] predicates[] bind[]
+2022-08-01 08:58:38,653 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
+2022-08-01 08:58:38,779 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-23 - Database [default] initialized
+2022-08-01 08:58:38,780 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-23 - Creating Pool for datasource 'default'
+2022-08-01 08:58:38,851 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-23 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-08-01 08:58:38,855 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-23 - Application started (Dev) (no global state)
+2022-08-01 08:58:38,873 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1001] select t0.id, t0.token, t0.platform, t0.expired_at, t0.deleted, t0.created_at, t0.updated_at, t0.customer_id from customer_device t0 where t0.deleted = 0 order by t0.id limit 10; --bind()
+2022-08-01 08:58:38,874 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1001] FindMany type[CustomerDevice] origin[Dv4L9Z.A.A] exeMicros[1940] rows[10] predicates[] bind[]

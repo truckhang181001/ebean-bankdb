@@ -1,0 +1,1063 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (BellSoft Java 1.8.0_333)
+[debug] Load.defaultLoad until apply took 279.398375ms
+[debug]           Load.loadUnit: plugins took 102.43875ms
+[debug]           Load.loadUnit: defsScala took 0.484834ms
+[debug] [Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project
+[debug]             Load.loadUnit: mkEval took 13.36575ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 17.394708 ms
+[info] loading settings for project play-samples-play-java-ebean-example-build from plugins.sbt ...
+[debug]               Load.resolveProject(play-samples-play-java-ebean-example-build) took 47.999541ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id play-samples-play-java-ebean-example-build, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, plugins: List(<none>))) took 75.270792ms
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: (play-samples-play-java-ebean-example-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 2193.619208ms
+[debug]           Load.loadUnit: cleanEvalClasses took 154.222792ms
+[debug]         Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/project/, ...) took 2460.108125ms
+[debug]       Load.apply: load took 2591.287166ms
+[debug]       Load.apply: resolveProjects took 4.490041ms
+[debug]       Load.apply: finalTransforms took 65.720333ms
+[debug]       Load.apply: config.delegates took 6.328875ms
+[debug]       Load.apply: Def.make(settings)... took 307.370083ms
+[debug]       Load.apply: structureIndex took 66.710667ms
+[debug]       Load.apply: mkStreams took 1.000292ms
+[info] loading project definition from /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 6526.279041ms
+[debug]     Load.loadUnit: defsScala took 0.010334ms
+[debug] [Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example
+[debug]       Load.loadUnit: mkEval took 1.083709ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(play.sbt.PlayJava), Atom(play.ebean.sbt.PlayEbean), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))
+[debug] Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.ebean.sbt.PlayEbean),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))
+[debug] Clause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,play.ebean.sbt.PlayEbean,play.sbt.PlayJava,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,play.sbt.PlayService,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,sbt.plugins.MiniDependencyTreePlugin,play.sbt.PlayLogback,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+[debug] Plugins.deducer#function took 13.381792 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 217.311334ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, plugins: List(play.sbt.PlayJava && play.ebean.sbt.PlayEbean))) took 254.551917ms
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 3827.826916ms
+[debug]     Load.loadUnit: cleanEvalClasses took 16.499ms
+[debug]   Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/, ...) took 10375.509ms
+[debug] Load.apply: load took 10411.283417ms
+[debug] Load.apply: resolveProjects took 1.801333ms
+[debug] Load.apply: finalTransforms took 57.38275ms
+[debug] Load.apply: config.delegates took 2.371375ms
+[debug] Load.apply: Def.make(settings)... took 284.597875ms
+[debug] Load.apply: structureIndex took 37.238875ms
+[debug] Load.apply: mkStreams took 0.005834ms
+[info]   __              __
+[info]   \ \     ____   / /____ _ __  __
+[info]    \ \   / __ \ / // __ `// / / /
+[info]    / /  / /_/ // // /_/ // /_/ /
+[info]   /_/  / .___//_/ \__,_/ \__, /
+[info]       /_/               /____/
+[info] 
+[info] Version 2.8.16 running Java 1.8.0_333
+[info] 
+[info] Play is run entirely by the community. Please consider contributing and/or donating:
+[info] https://www.playframework.com/sponsors
+[info] 
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(project root, None, None)
+[info]   __              __
+[info]   \ \     ____   / /____ _ __  __
+[info]    \ \   / __ \ / // __ `// / / /
+[info]    / /  / /_/ // // /_/ // /_/ /
+[info]   /_/  / .___//_/ \__,_/ \__, /
+[info]       /_/               /____/
+[info] 
+[info] Version 2.8.16 running Java 1.8.0_333
+[info] 
+[info] Play is run entirely by the community. Please consider contributing and/or donating:
+[info] https://www.playframework.com/sponsors
+[info] 
+[debug] > Exec(run 8000, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[error] java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[error] 	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+[error] 	at scala.Option.map(Option.scala:242)
+[error] 	at play.api.Configuration$.configError(Configuration.scala:149)
+[error] 	at play.api.Configuration$.load(Configuration.scala:98)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}
+[error] 	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ConfigConcatenation.resolveSubstitutions(ConfigConcatenation.java:205)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:235)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:79)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:69)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:42)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:219)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:186)
+[error] 	at play.api.Configuration$.load(Configuration.scala:94)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] (Compile / playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[error] java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[error] 	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+[error] 	at scala.Option.map(Option.scala:242)
+[error] 	at play.api.Configuration$.configError(Configuration.scala:149)
+[error] 	at play.api.Configuration$.load(Configuration.scala:98)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}
+[error] 	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ConfigConcatenation.resolveSubstitutions(ConfigConcatenation.java:205)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:235)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:79)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:69)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:42)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:219)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:186)
+[error] 	at play.api.Configuration$.load(Configuration.scala:94)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] (Compile / playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[error] java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[error] 	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+[error] 	at scala.Option.map(Option.scala:242)
+[error] 	at play.api.Configuration$.configError(Configuration.scala:149)
+[error] 	at play.api.Configuration$.load(Configuration.scala:98)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}
+[error] 	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ConfigConcatenation.resolveSubstitutions(ConfigConcatenation.java:205)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+[error] 	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+[error] 	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)
+[error] 	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:235)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:79)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:69)
+[error] 	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:42)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:219)
+[error] 	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:186)
+[error] 	at play.api.Configuration$.load(Configuration.scala:94)
+[error] 	at play.api.Configuration$.load(Configuration.scala:107)
+[error] 	at play.api.Configuration$.load(Configuration.scala:113)
+[error] 	at play.api.Configuration.load(Configuration.scala)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)
+[error] 	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)
+[error] 	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)
+[error] 	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:750)
+[error] (Compile / playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}]
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[info] compiling 5 Scala sources and 18 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.8. Compiling...
+[info]   Compilation completed in 11.428s.
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources and 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources and 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[info] compiling 1 Scala source and 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[warn] In the last 10 seconds, 7.333 (80.6%) were spent in GC. [Heap: 0.79GB free of 0.94GB, max 0.94GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[warn] In the last 1309 seconds, 8.166 (0.6%) were spent in GC. [Heap: 0.78GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[warn] In the last 1328 seconds, 7.433 (0.6%) were spent in GC. [Heap: 0.77GB free of 0.96GB, max 0.96GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[warn] In the last 977 seconds, 10.255 (1.1%) were spent in GC. [Heap: 0.76GB free of 0.95GB, max 0.95GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[info] compiling 5 Scala sources and 18 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] In the last 10 seconds, 6.458 (64.7%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.155 (51.6%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.201 (52.2%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.212 (52.2%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.082 (50.9%) were spent in GC. [Heap: 0.78GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 9.265 (92.8%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.524 (75.3%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 8.485 (85.0%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.315 (73.3%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 837 seconds, 10.039 (1.2%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.13GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.2%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.64GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.019 (50.2%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.048 (50.6%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.021 (50.3%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.081 (50.9%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.02 (50.3%) were spent in GC. [Heap: 0.39GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.163 (51.7%) were spent in GC. [Heap: 0.20GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.2%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.17GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 632 seconds, 12.928 (2.0%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.2%) were spent in GC. [Heap: 0.72GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.69GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.861 (58.7%) were spent in GC. [Heap: 0.60GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.156 (51.7%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.047 (50.6%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.313 (53.2%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.241 (52.4%) were spent in GC. [Heap: 0.65GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.031 (50.5%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.111 (51.4%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.171 (51.8%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.098 (51.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.054 (50.6%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.45GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.039 (50.5%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.037 (50.4%) were spent in GC. [Heap: 0.35GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.061 (50.7%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.105 (51.2%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.014 (50.2%) were spent in GC. [Heap: 0.15GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.141 (53.8%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.3%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.158 (51.6%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.284 (52.9%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.1%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.015 (50.2%) were spent in GC. [Heap: 0.39GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 9 seconds, 5.003 (60.3%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.6%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.03 (50.8%) were spent in GC. [Heap: 0.35GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.083 (50.9%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.292 (53.0%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (51.0%) were spent in GC. [Heap: 0.10GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.129 (51.4%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.37 (53.8%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.647 (56.9%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.106 (51.2%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.208 (52.1%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.027 (50.5%) were spent in GC. [Heap: 0.19GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.25GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.049 (50.7%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (53.0%) were spent in GC. [Heap: 0.69GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.032 (51.0%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.2%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.163 (51.6%) were spent in GC. [Heap: 0.74GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.072 (50.8%) were spent in GC. [Heap: 0.70GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.189 (52.1%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.3%) were spent in GC. [Heap: 0.50GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.64GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.061 (50.7%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.3%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.01 (50.2%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.164 (51.7%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.2%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.011 (50.1%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.2%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.01 (50.4%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.041 (50.4%) were spent in GC. [Heap: 0.20GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.07 (52.9%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.044 (50.5%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.2%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.286 (55.7%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (51.2%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.674 (56.9%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.021 (50.2%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.074 (50.8%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (52.2%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.4%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.017 (50.2%) were spent in GC. [Heap: 0.35GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.123 (51.4%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.018 (50.2%) were spent in GC. [Heap: 0.07GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 933 seconds, 11.476 (1.2%) were spent in GC. [Heap: 0.78GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.018 (50.4%) were spent in GC. [Heap: 0.80GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.104 (51.0%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.70GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.0%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.4%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.052 (50.6%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.068 (50.7%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.01 (50.2%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.03 (50.3%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.024 (50.3%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.0%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.5%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.25GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.16GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.2%) were spent in GC. [Heap: 0.06GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 715 seconds, 14.16 (2.0%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.3%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.021 (50.2%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.096 (51.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.025 (50.4%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.024 (50.3%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.2%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.071 (51.2%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.50GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.018 (50.2%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.2%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.072 (52.0%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.151 (54.5%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.20GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.128 (51.4%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.22 (52.3%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.011 (50.2%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.312 (53.2%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (52.2%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.018 (50.3%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.02 (50.2%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.20GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 780 seconds, 28.065 (3.6%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.7%) were spent in GC. [Heap: 0.78GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.018 (50.3%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.011 (50.3%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.2%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.178 (51.9%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.287 (52.9%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.548 (55.6%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.016 (50.2%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.3%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.59GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (53.1%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.129 (55.5%) were spent in GC. [Heap: 0.35GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.175 (54.1%) were spent in GC. [Heap: 0.59GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.2%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.033 (50.4%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.046 (50.5%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.061 (50.7%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.04 (50.5%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.169 (51.8%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.6%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.045 (50.5%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (52.0%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.449 (55.1%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.22GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.1%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.2%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 9.066 (90.7%) were spent in GC. [Heap: 0.78GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (52.3%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.2%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.53GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.046 (50.5%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.127 (51.3%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.4%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (51.0%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.43 (64.3%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.032 (50.4%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.01 (50.1%) were spent in GC. [Heap: 0.65GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.011 (50.1%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.932 (59.4%) were spent in GC. [Heap: 0.78GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.69GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.5%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (51.2%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.3%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.3%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.022 (50.3%) were spent in GC. [Heap: 0.58GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.58GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.02 (50.3%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (51.4%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.069 (72.1%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.022 (51.1%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.17GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.066 (50.9%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.343 (73.5%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.2%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.062 (60.6%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.029 (50.4%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.863 (58.7%) were spent in GC. [Heap: 0.45GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.707 (69.9%) were spent in GC. [Heap: 0.60GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.315 (53.2%) were spent in GC. [Heap: 0.50GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.5%) were spent in GC. [Heap: 0.59GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.3%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.028 (50.3%) were spent in GC. [Heap: 0.59GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.029 (52.6%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.648 (69.9%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.266 (64.3%) were spent in GC. [Heap: 0.50GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.897 (69.0%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.099 (51.0%) were spent in GC. [Heap: 0.52GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.41 (54.2%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.051 (52.9%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.443 (54.8%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.061 (50.6%) were spent in GC. [Heap: 0.39GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.2%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.042 (50.5%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.026 (50.3%) were spent in GC. [Heap: 0.23GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.064 (50.7%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.273 (52.8%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.029 (50.4%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.045 (50.5%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.042 (50.5%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.21GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.022 (50.3%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.015 (50.2%) were spent in GC. [Heap: 0.35GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.019 (50.2%) were spent in GC. [Heap: 0.19GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.348 (73.5%) were spent in GC. [Heap: 0.79GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.019 (50.2%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.05 (50.6%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.22GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 585 seconds, 11.743 (2.0%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.0%) were spent in GC. [Heap: 0.46GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.011 (51.0%) were spent in GC. [Heap: 0.66GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.13 (51.3%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.058 (50.6%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.23GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.43GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.038 (50.4%) were spent in GC. [Heap: 0.42GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.4%) were spent in GC. [Heap: 0.41GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.2%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.21GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.0%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.016 (50.2%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.3%) were spent in GC. [Heap: 0.74GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.247 (52.5%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.195 (52.0%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.097 (51.0%) were spent in GC. [Heap: 0.40GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.055 (50.6%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.034 (50.5%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.3%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.09GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 7.342 (73.5%) were spent in GC. [Heap: 0.73GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.114 (51.3%) were spent in GC. [Heap: 0.69GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.038 (50.4%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.51GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.627 (66.5%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.0%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.2%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.146 (51.5%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.19GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.8%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.118 (51.3%) were spent in GC. [Heap: 0.25GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.15GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.0%) were spent in GC. [Heap: 0.24GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.2%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.086 (51.0%) were spent in GC. [Heap: 0.08GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.5%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.18GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 8.234 (82.4%) were spent in GC. [Heap: 0.72GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.70GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.1%) were spent in GC. [Heap: 0.53GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.092 (50.9%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.3%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.064 (50.7%) were spent in GC. [Heap: 0.69GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.61GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.64GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.58GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.55GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.049 (50.5%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.178 (52.2%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.6%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.131 (51.3%) were spent in GC. [Heap: 0.27GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.45GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.864 (58.7%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.268 (52.8%) were spent in GC. [Heap: 0.39GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.007 (50.1%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.396 (54.3%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.269 (52.7%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.416 (54.4%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.2%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.471 (55.0%) were spent in GC. [Heap: 0.33GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.17GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.019 (50.2%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.086 (50.9%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.012 (50.1%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.265 (62.8%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.5%) were spent in GC. [Heap: 0.10GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.008 (50.1%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 806 seconds, 15.304 (1.9%) were spent in GC. [Heap: 0.77GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.016 (50.2%) were spent in GC. [Heap: 0.68GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.2%) were spent in GC. [Heap: 0.74GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.161 (51.6%) were spent in GC. [Heap: 0.53GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.4%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.50GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.1%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.57GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.459 (54.6%) were spent in GC. [Heap: 0.56GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.812 (69.2%) were spent in GC. [Heap: 0.63GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.458 (56.6%) were spent in GC. [Heap: 0.62GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.53GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.2%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.014 (50.2%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.38GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.334 (53.5%) were spent in GC. [Heap: 0.54GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.032 (50.4%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.002 (50.1%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.009 (50.1%) were spent in GC. [Heap: 0.44GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.006 (50.1%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.584 (56.7%) were spent in GC. [Heap: 0.49GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.437 (67.2%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.02 (50.4%) were spent in GC. [Heap: 0.48GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.1%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.28GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.387 (54.1%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.136 (51.5%) were spent in GC. [Heap: 0.30GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.031 (61.3%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 6.218 (63.1%) were spent in GC. [Heap: 0.36GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.001 (50.0%) were spent in GC. [Heap: 0.34GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.1%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.29 (53.0%) were spent in GC. [Heap: 0.32GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.668 (56.8%) were spent in GC. [Heap: 0.37GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.809 (58.4%) were spent in GC. [Heap: 0.31GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.046 (50.9%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.004 (50.1%) were spent in GC. [Heap: 0.29GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.659 (56.6%) were spent in GC. [Heap: 0.26GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 879 seconds, 35.581 (4.1%) were spent in GC. [Heap: 0.67GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.003 (50.0%) were spent in GC. [Heap: 0.47GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.186 (51.9%) were spent in GC. [Heap: 0.53GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.068 (50.7%) were spent in GC. [Heap: 0.75GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.032 (50.3%) were spent in GC. [Heap: 0.76GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.014 (50.1%) were spent in GC. [Heap: 0.74GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.139 (52.1%) were spent in GC. [Heap: 0.45GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 10 seconds, 5.005 (50.4%) were spent in GC. [Heap: 0.71GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.

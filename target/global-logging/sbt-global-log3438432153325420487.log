@@ -1,0 +1,342 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.6.2 (Oracle Corporation Java 1.8.0_202)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: plugins took 349.491167ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: defsScala took 1.066542ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/apple/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/apple/.sbt/1.0/plugins, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 62.513708 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.resolveProject(global-plugins) took 138.804667ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/apple/.sbt/1.0/plugins, plugins: List(<none>))) took 287.135417ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/apple/.sbt/1.0/plugins, returning: (global-plugins)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: loadedProjectsRaw took 364.519667ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: cleanEvalClasses took 0.931583ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit(file:/Users/apple/.sbt/1.0/plugins/, ...) took 758.199458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: load took 1911.924709ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: resolveProjects took 72.408042ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: finalTransforms took 439.295833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: config.delegates took 25.589833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: Def.make(settings)... took 4377.270792ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: structureIndex took 936.085584ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: mkStreams took 16.213333ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading global plugins from /Users/apple/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 21906.085667ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 452.572ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.128208ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 56.624667ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 33.279375 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project play-samples-play-java-ebean-example-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(play-samples-play-java-ebean-example-build) took 153.469708ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id play-samples-play-java-ebean-example-build, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, plugins: List(<none>))) took 194.306291ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: (play-samples-play-java-ebean-example-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 1285.871792ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 105.520083ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/project/, ...) took 1860.843125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 1898.553458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 10.045459ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 106.398458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 13.691375ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 1859.310167ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 368.587209ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.176959ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 20056.129583ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.019166ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 34.08825ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(play.sbt.PlayJava), Atom(play.ebean.sbt.PlayEbean), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.ebean.sbt.PlayEbean),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,play.ebean.sbt.PlayEbean,play.sbt.PlayJava,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,play.sbt.PlayService,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,sbt.plugins.MiniDependencyTreePlugin,play.sbt.PlayLogback,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 776.552625 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 1104.506167ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, plugins: List(play.sbt.PlayJava && play.ebean.sbt.PlayEbean))) took 1920.078125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 3412.686209ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 21.133958ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/, ...) took 23529.187458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 23635.6195ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 9.1985ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 304.349666ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 16.846083ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 3203.255209ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 584.743292ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.022583ms[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  __              __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  \ \     ____   / /____ _ __  __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   \ \   / __ \ / // __ `// / / /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   / /  / /_/ // // /_/ // /_/ /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  /_/  / .___//_/ \__,_/ \__, /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m      /_/               /____/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion 2.8.16 running Java 1.8.0_202[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[1mPlay is run entirely by the community. Please consider contributing and/or donating:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.playframework.com/sponsors[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources and 3 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:22: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:11:33: value save is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.save()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:44:45: value list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.list()" id="add" class="btn btn-light" role="button">Cancel</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:48:2: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(id: Long, computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:1:32: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(id: Long, computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:11:33: value update is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.update(id)) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:44:45: value list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.list()" id="add" class="btn btn-light" role="button">Cancel</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:49:33: value delete is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.delete(id), Symbol("class") -> "top-right") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:54:2: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(currentPage: io.ebean.PagedList[Computer],[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:1:35: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(currentPage: io.ebean.PagedList[Computer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:30:25: value list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m  routes.HomeController.list(newPage, sortBy, order, currentFilter)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:74:39: value create is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      <a href="@routes.HomeController.create()" id="add" class="btn btn-success float-right" role="button"1>Add a new computer</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:97:12: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m      @for(computer <- currentPage.getList.asScala) {[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/list.scala.html:154:2: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/main.scala.html:9:73: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.min.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/main.scala.html:12:57: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m19 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources and 3 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:22: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:11:33: value save is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.save()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:44:45: value list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.list()" id="add" class="btn btn-light" role="button">Cancel</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:48:2: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(id: Long, computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:1:32: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(id: Long, computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:11:33: value update is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.update(id)) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:44:45: value list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.list()" id="add" class="btn btn-light" role="button">Cancel</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:49:33: value delete is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(routes.HomeController.delete(id), Symbol("class") -> "top-right") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/editForm.scala.html:54:2: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources and 3 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:1: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/createForm.scala.html:1:22: not found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m@(computerForm: Form[Computer], companies: Map[String, String])(implicit request: Http.Request, messages: play.i18n.Messages)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mvalue save is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mvalue list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mvalue update is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mvalue list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mvalue delete is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mvalue list is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mvalue create is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mmissing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0mnot found: type Computer[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/main.scala.html:9:73: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.min.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/views/main.scala.html:12:57: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m22 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m

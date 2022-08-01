@@ -1,0 +1,3 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(h2-browser, Some(4426d6c3-0f36-4005-b1cc-3bbbe6397ebe), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

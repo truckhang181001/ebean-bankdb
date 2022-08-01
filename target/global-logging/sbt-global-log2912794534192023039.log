@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(console, Some(8df7d0b5-ac03-45fa-a3d3-392febc83701), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / console[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources and 4 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mStarting scala interpreter...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

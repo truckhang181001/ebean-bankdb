@@ -1,0 +1,92 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(all {file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/}root/products {file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/}root/test:products, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / products, Test / products[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/controllers/CustomerController.java:97:1: variable customer is already defined in method search()[0m
+[0m[[0m[31merror[0m] [0m[0mCustomer customer = new QCustomer()[0m
+[0m[[0m[31merror[0m] [0m[0m                    .customerName.equalTo("Nguyen Van C")[0m
+[0m[[0m[31merror[0m] [0m[0m                    .findOne();[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/app/controllers/CustomerController.java:97:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class QCustomer[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.CustomerController[0m
+[0m[[0m[31merror[0m] [0m[0mQCustomer[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}][0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.map(Option.scala:242)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.configError(Configuration.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:98)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:107)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration.load(Configuration.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:750)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ConfigConcatenation.resolveSubstitutions(ConfigConcatenation.java:205)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:183)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:235)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:42)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:219)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:107)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration$.load(Configuration.scala:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.Configuration.load(Configuration.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:750)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mplayEbeanModels[0m) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/conf/application.conf: 42: Could not resolve substitution to a value: ${play.path}][0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) javac returned non-zero exit code[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Jul 26, 2022 10:23:33 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

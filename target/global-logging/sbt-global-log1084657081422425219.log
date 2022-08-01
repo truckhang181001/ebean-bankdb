@@ -1,0 +1,49 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(all {file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/}root/products {file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/}root/test:products, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / products, Test / products[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:play-java-ebean-example[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources and 18 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m... writing manifest ebean-typequery.mf[0m
+[0m[[0m[0minfo[0m] [0m[0m... re-read the manifest.[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerated query beans for [4] entities [0] embeddable[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:3:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:35:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:35:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:69:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:69:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:69:1: '(' expected[0m
+[0m[[0m[31merror[0m] [0m[0m=[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerAccount.java:69:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:3:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:25:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerAccount.java:25:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:3:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:36:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:36:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:71:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:71:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:71:1: '(' expected[0m
+[0m[[0m[31merror[0m] [0m[0m=[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/QCustomerDevice.java:71:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:3:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:3:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:3:1: class, interface, or enum expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:27:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes/models/query/assoc/QAssocCustomerDevice.java:27:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) javac returned non-zero exit code[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed Jul 25, 2022 5:12:41 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

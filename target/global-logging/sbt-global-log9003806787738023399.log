@@ -1,0 +1,203 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (BellSoft Java 1.8.0_333)
+[debug] Load.defaultLoad until apply took 640.576959ms
+[debug]           Load.loadUnit: plugins took 413.856292ms
+[debug]           Load.loadUnit: defsScala took 0.440709ms
+[debug] [Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project
+[debug]             Load.loadUnit: mkEval took 13.468625ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 29.708084 ms
+[info] loading settings for project play-samples-play-java-ebean-example-build from plugins.sbt ...
+[debug]               Load.resolveProject(play-samples-play-java-ebean-example-build) took 90.099875ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id play-samples-play-java-ebean-example-build, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, plugins: List(<none>))) took 174.01075ms
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project, returning: (play-samples-play-java-ebean-example-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 765.782375ms
+[debug]           Load.loadUnit: cleanEvalClasses took 11.031375ms
+[debug]         Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/project/, ...) took 1199.579583ms
+[debug]       Load.apply: load took 2284.564042ms
+[debug]       Load.apply: resolveProjects took 10.8365ms
+[debug]       Load.apply: finalTransforms took 127.276583ms
+[debug]       Load.apply: config.delegates took 11.326917ms
+[debug]       Load.apply: Def.make(settings)... took 600.9035ms
+[debug]       Load.apply: structureIndex took 135.645709ms
+[debug]       Load.apply: mkStreams took 1.777416ms
+[info] loading project definition from /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 5101.634875ms
+[debug]     Load.loadUnit: defsScala took 0.00275ms
+[debug] [Loading] Scanning directory /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example
+[debug]       Load.loadUnit: mkEval took 0.348625ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(play.sbt.PlayJava), Atom(play.ebean.sbt.PlayEbean), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))
+[debug] Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))
+[debug] Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))
+[debug] Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.ebean.sbt.PlayEbean),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))
+[debug] Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))
+[debug] Clause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))
+[debug] Clause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))
+[debug] Clause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))
+[debug] Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))
+[debug] Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,play.ebean.sbt.PlayEbean,play.sbt.PlayJava,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,play.sbt.PlayService,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,sbt.plugins.MiniDependencyTreePlugin,play.sbt.PlayLogback,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+[debug] Plugins.deducer#function took 15.221709 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 125.722458ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, plugins: List(play.sbt.PlayJava && play.ebean.sbt.PlayEbean))) took 144.149125ms
+[debug] [Loading] Done in /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 215.676291ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.181417ms
+[debug]   Load.loadUnit(file:/Users/apple/Brian/Project/Viettel%20IDC/Play%20Project/play-samples-play-java-ebean-example/, ...) took 5321.218875ms
+[debug] Load.apply: load took 5351.870875ms
+[debug] Load.apply: resolveProjects took 0.866917ms
+[debug] Load.apply: finalTransforms took 27.159916ms
+[debug] Load.apply: config.delegates took 1.484125ms
+[debug] Load.apply: Def.make(settings)... took 174.409209ms
+[debug] Load.apply: structureIndex took 55.080708ms
+[debug] Load.apply: mkStreams took 0.024083ms
+[info]   __              __
+[info]   \ \     ____   / /____ _ __  __
+[info]    \ \   / __ \ / // __ `// / / /
+[info]    / /  / /_/ // // /_/ // /_/ /
+[info]   /_/  / .___//_/ \__,_/ \__, /
+[info]       /_/               /____/
+[info] 
+[info] Version 2.8.16 running Java 1.8.0_333
+[info] 
+[info] Play is run entirely by the community. Please consider contributing and/or donating:
+[info] https://www.playframework.com/sponsors
+[info] 
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(project root, None, None)
+[info]   __              __
+[info]   \ \     ____   / /____ _ __  __
+[info]    \ \   / __ \ / // __ `// / / /
+[info]    / /  / /_/ // // /_/ // /_/ /
+[info]   /_/  / .___//_/ \__,_/ \__, /
+[info]       /_/               /____/
+[info] 
+[info] Version 2.8.16 running Java 1.8.0_333
+[info] 
+[info] Play is run entirely by the community. Please consider contributing and/or donating:
+[info] https://www.playframework.com/sponsors
+[info] 
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:play-java-ebean-example
+[info] compiling 5 Scala sources and 12 Java sources to /Users/apple/Brian/Project/Viettel IDC/Play Project/play-samples-play-java-ebean-example/target/scala-2.13/classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Canceling execution...
+[debug] Forcing garbage collection...

@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                               controllers.CustomerController.index()
+GET     /customer/:id                   controllers.CustomerController.view(id: Int)
+POST    /customer/create                controllers.CustomerController.create(request: Request)
+DELETE  /customer/delete/:id            controllers.CustomerController.delete(id: Int)
+PATCH   /customer/update/:id            controllers.CustomerController.update(id: Int, request : Request)
+
+GET     /customeraccount/:id            controllers.CustomerAccountController.view(id: Int)
+POST    /customeraccount/create         controllers.CustomerAccountController.create(customerId: Int, bankId: Int)
+
+GET     /device/:id                     controllers.CustomerDeviceController.view(id: Int)
+POST    /device/create                  controllers.CustomerDeviceController.create(customerId: Int,request : Request)
+
+GET     /bankaccount/:id                controllers.BankAccountController.view(id: Int)
+POST    /bankaccount/create/:id         controllers.BankAccountController.create(id: Int, request: Request)
+
+GET     /customer/search/:id                controllers.CustomerController.search(id: Int)
+
